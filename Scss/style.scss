@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #efefef;
+
+    .container {
+        width: 300px;
+        margin: 0 auto;
+
+    .card {
+        display: grid;
+        place-items: center;
+        transition: all 0.3s ease;
+        background-color: #fff;
+        margin: 16px;
+        border-radius: 20px;
+
+        &:hover {
+            box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,0.3);
+        }
+
+        .card-image {
+            background-image: url("../images/background-qr.png");
+            background-size: cover;
+            margin: -6px;
+            border-radius: 8px;
+            padding: 40px;
+        }
+    }
+
+    .text-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 25px 10px 40px 10px;  
+
+        h2 {
+            font-family: Open Sans;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-family: Dosis;
+            margin: 0 auto;
+        }
+    }
+    }
+
+    .attribution {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin: 10px;
+        font-size: 12px;
+        text-align: right;
+
+    a {
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: hsl(228, 45%, 24%);
+        }
+    }
+    }
+
+    @media (max-width: 375px) {
+      /* Estilos para dispositivos móviles con un ancho máximo de 375px */
+    .container {
+        width: 100%;
+
+        .card {
+            margin: 50px;
+
+        .card-image {
+            padding: 20px;
+        }
+        }
+
+        .text-description {
+            padding: 15px 5px 30px 5px;
+        }
+    }
+    }
+
+    @media (min-width: 1440px) {
+      /* Estilos para dispositivos de escritorio con un ancho mínimo de 1440px */
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+
+        .card {
+            margin: 16px;
+
+        .card-image {
+            padding: 40px;
+        }
+        }
+
+        .text-description {
+            padding: 25px 10px 40px 10px;
+        }
+    }
+    }
+}
